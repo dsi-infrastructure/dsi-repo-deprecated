@@ -5,4 +5,5 @@
 ###
 .chef/*.pem
 .chef/knife.rb
+config/knife.rb
 .chef/encrypted_data_bag_secret
