@@ -1,0 +1,61 @@
+bash -c '
+
+<%= "export http_proxy=\"#{knife_config[:bootstrap_proxy]}\"" if knife_config[:bootstrap_proxy] -%>
+
+PACKAGE_URL="http://repository.os.gov.pf/archives/ubuntu-14.04/chef_11.12.8-2_amd64.deb"
+
+if [ ! -f /usr/bin/chef-client ]; then
+  wget $PACKAGE_URL -O /tmp/chef-client-package.deb
+  dpkg -i /tmp/chef-client-package.deb
+fi
+
+mkdir -p /etc/chef
+(
+cat <<'EOP'
+<%= validation_key %>
+EOP
+) > /tmp/validation.pem
+
+awk NF /tmp/validation.pem > /etc/chef/validation.pem
+
+rm /tmp/validation.pem
+chmod 0600 /etc/chef/validation.pem
+
+<% if @chef_config[:knife].has_key?(:secret_file) -%>
+  (
+  cat <<'EOP'
+  <%= IO.read(Chef::Config[:knife][:secret_file]) %>
+  EOP
+  ) > /tmp/encrypted_data_bag_secret
+
+  awk NF /tmp/encrypted_data_bag_secret > /etc/chef/encrypted_data_bag_secret
+
+  rm /tmp/encrypted_data_bag_secret
+
+  chmod 0600 /etc/chef/encrypted_data_bag_secret
+
+<% end -%>
+
+<%# Generate Ohai Hints -%>
+<% unless @chef_config[:knife][:hints].nil? || @chef_config[:knife][:hints].empty? -%>
+mkdir -p /etc/chef/ohai/hints
+<% @chef_config[:knife][:hints].each do |name, hash| -%>
+(
+cat <<'EOP'
+<%= hash.to_json %>
+EOP
+) > /etc/chef/ohai/hints/<%= name %>.json
+<% end -%>
+<% end -%>
+(
+cat <<'EOP'
+<%= config_content %>
+EOP
+) > /etc/chef/client.rb
+(
+cat <<'EOP'
+<%= first_boot.to_json %>
+EOP
+) > /etc/chef/first-boot.json
+<%= start_chef %>'
+
