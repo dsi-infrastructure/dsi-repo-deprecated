@@ -2,6 +2,8 @@
 roles/*.json
 environments/*.json
 data_bags/*.json
+.vagrant
+Vagrantfile
 
 ###
 # Ignore Chef key files and secrets
