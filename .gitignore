@@ -1,4 +1,7 @@
 .rake_test_cache
+roles/*.json
+environments/*.json
+data_bags/*.json
 
 ###
 # Ignore Chef key files and secrets
@@ -7,3 +10,4 @@
 .chef/knife.rb
 config/knife.rb
 .chef/encrypted_data_bag_secret
+.chef/syntax_check_cache/
