@@ -4,3 +4,6 @@
 [submodule "cookbooks/chef-iproute2"]
 	path = cookbooks/chef-iproute2
 	url = https://github.com/peychart/chef-iproute2
+[submodule "cookbooks/openldap"]
+	path = cookbooks/openldap
+	url = https://github.com/sitle/openldap
