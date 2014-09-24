@@ -7,3 +7,6 @@
 [submodule "cookbooks/openldap"]
 	path = cookbooks/openldap
 	url = https://github.com/sitle/openldap
+[submodule "cookbooks/chef-haclusters"]
+	path = cookbooks/chef-haclusters
+	url = https://github.com/peychart/chef-haclusters.git
