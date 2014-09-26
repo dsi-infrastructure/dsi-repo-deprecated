@@ -25,4 +25,4 @@ DSI-REPO permet d'interagir avec le serveur chef.
 
 ### Récupération des l'envionnement de production
 
-* Lancer backup.sh.
+* Lancer ./backup.sh.
