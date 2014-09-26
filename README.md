@@ -22,3 +22,7 @@ DSI-REPO permet d'interagir avec le serveur chef.
 
 * knife node list
 * knife environment list
+
+### Récupération des l'envionnement de production
+
+* Lancer backup.sh.
