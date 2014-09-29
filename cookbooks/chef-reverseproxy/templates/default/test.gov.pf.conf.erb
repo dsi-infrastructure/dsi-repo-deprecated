@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  ServerName <%= @params[:server_name] %>
+
+  ProxyPass / http://<%= @params[:server_name_proxy] %>/
+  ProxyPassReverse / http://<%= @params[:server_name_proxy] %>/
+
+  LogLevel info
+  ErrorLog <%= @node[:apache][:log_dir] %>/<%= @params[:name] %>-error.log
+  CustomLog <%= @node[:apache][:log_dir] %>/<%= @params[:name] %>-access.log combined
+</VirtualHost>
