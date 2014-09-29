@@ -2,6 +2,7 @@
 roles/*.json
 environments/*.json
 data_bags/*
+syntax_check_cache/
 .vagrant
 Vagrantfile*
 secret_key
