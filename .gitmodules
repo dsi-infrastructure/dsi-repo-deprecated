@@ -10,3 +10,6 @@
 [submodule "cookbooks/chef-haclusters"]
 	path = cookbooks/chef-haclusters
 	url = https://github.com/peychart/chef-haclusters.git
+[submodule "cookbooks/chef-ldap-checkbackend"]
+	path = cookbooks/chef-ldap-checkbackend
+	url = https://github.com/peychart/chef-ldap-checkbackend.git
