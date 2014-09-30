@@ -2,8 +2,11 @@
 roles/*.json
 environments/*.json
 data_bags/*
+syntax_check_cache/
+my_cookbooks/
 .vagrant
-Vagrantfile
+Vagrantfile*
+secret_key
 
 ###
 # Ignore Chef key files and secrets
