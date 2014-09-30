@@ -13,9 +13,6 @@
 [submodule "cookbooks/chef-ldap-checkbackend"]
 	path = cookbooks/chef-ldap-checkbackend
 	url = https://github.com/peychart/chef-ldap-checkbackend.git
-[submodule "cookbooks/haproxy"]
-	path = cookbooks/haproxy
-	url = https://github.com/hw-cookbooks/haproxy.git
 [submodule "cookbooks/cookbook-snmp"]
 	path = cookbooks/cookbook-snmp
 	url = https://github.com/atomic-penguin/cookbook-snmp.git
