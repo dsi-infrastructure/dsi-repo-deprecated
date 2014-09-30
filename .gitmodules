@@ -16,3 +16,6 @@
 [submodule "cookbooks/haproxy"]
 	path = cookbooks/haproxy
 	url = https://github.com/hw-cookbooks/haproxy.git
+[submodule "cookbooks/cookbook-snmp"]
+	path = cookbooks/cookbook-snmp
+	url = https://github.com/atomic-penguin/cookbook-snmp.git
