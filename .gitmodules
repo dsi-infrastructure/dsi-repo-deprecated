@@ -22,3 +22,9 @@
 [submodule "cookbooks/haproxy"]
 	path = cookbooks/haproxy
 	url = https://github.com/hw-cookbooks/haproxy.git
+[submodule "cookbooks/sysctl"]
+	path = cookbooks/sysctl
+	url = https://github.com/onehealth-cookbooks/sysctl.git
+[submodule "cookbooks/limits"]
+	path = cookbooks/limits
+	url = https://github.com/jrwesolo/limits.git
