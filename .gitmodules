@@ -19,3 +19,6 @@
 [submodule "cookbooks/chef-nodeAttributes"]
 	path = cookbooks/chef-nodeAttributes
 	url = https://github.com/peychart/chef-nodeAttributes.git
+[submodule "cookbooks/haproxy"]
+	path = cookbooks/haproxy
+	url = https://github.com/hw-cookbooks/haproxy.git
