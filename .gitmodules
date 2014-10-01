@@ -25,3 +25,7 @@
 [submodule "cookbooks/limits"]
 	path = cookbooks/limits
 	url = https://github.com/jrwesolo/limits.git
+[submodule "cookbooks/haproxy"]
+	path = cookbooks/haproxy
+	url = https://github.com/hw-cookbooks/haproxy.git
+	branch = develop
