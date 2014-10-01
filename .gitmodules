@@ -28,3 +28,6 @@
 [submodule "cookbooks/limits"]
 	path = cookbooks/limits
 	url = https://github.com/jrwesolo/limits.git
+[submodule "cookbooks/ohai"]
+	path = cookbooks/ohai
+	url = https://github.com/opscode-cookbooks/ohai.git
