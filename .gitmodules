@@ -32,3 +32,6 @@
 [submodule "cookbooks/ohai"]
 	path = cookbooks/ohai
 	url = https://github.com/opscode-cookbooks/ohai.git
+[submodule "cookbooks/chef-squidGuard"]
+	path = cookbooks/chef-squidGuard
+	url = https://github.com/peychart/chef-squidGuard.git
