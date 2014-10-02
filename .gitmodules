@@ -29,3 +29,6 @@
 	path = cookbooks/haproxy
 	url = https://github.com/hw-cookbooks/haproxy.git
 	branch = develop
+[submodule "cookbooks/ohai"]
+	path = cookbooks/ohai
+	url = https://github.com/opscode-cookbooks/ohai.git
