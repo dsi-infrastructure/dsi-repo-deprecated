@@ -35,3 +35,6 @@
 [submodule "cookbooks/chef-squidGuard"]
 	path = cookbooks/chef-squidGuard
 	url = https://github.com/peychart/chef-squidGuard.git
+[submodule "cookbooks/chef-lvm"]
+	path = cookbooks/chef-lvm
+	url = https://github.com/peychart/chef-lvm.git
