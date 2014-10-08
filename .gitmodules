@@ -38,3 +38,6 @@
 [submodule "cookbooks/chef-lvm"]
 	path = cookbooks/chef-lvm
 	url = https://github.com/peychart/chef-lvm.git
+[submodule "cookbooks/chef-squid_ldap_auth"]
+	path = cookbooks/chef-squid_ldap_auth
+	url = https://github.com/peychart/chef-squid_ldap_auth.git
