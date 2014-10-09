@@ -32,3 +32,15 @@
 [submodule "cookbooks/ohai"]
 	path = cookbooks/ohai
 	url = https://github.com/opscode-cookbooks/ohai.git
+[submodule "cookbooks/chef-squidGuard"]
+	path = cookbooks/chef-squidGuard
+	url = https://github.com/peychart/chef-squidGuard.git
+[submodule "cookbooks/chef-lvm"]
+	path = cookbooks/chef-lvm
+	url = https://github.com/peychart/chef-lvm.git
+[submodule "cookbooks/chef-squid_ldap_auth"]
+	path = cookbooks/chef-squid_ldap_auth
+	url = https://github.com/peychart/chef-squid_ldap_auth.git
+[submodule "cookbooks/chef-delegate"]
+	path = cookbooks/chef-delegate
+	url = https://github.com/peychart/chef-delegate.git
