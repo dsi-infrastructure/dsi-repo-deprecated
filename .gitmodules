@@ -41,3 +41,6 @@
 [submodule "cookbooks/chef-squid_ldap_auth"]
 	path = cookbooks/chef-squid_ldap_auth
 	url = https://github.com/peychart/chef-squid_ldap_auth.git
+[submodule "cookbooks/chef-delegate"]
+	path = cookbooks/chef-delegate
+	url = https://github.com/peychart/chef-delegate.git
