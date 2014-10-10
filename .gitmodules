@@ -41,3 +41,6 @@
 [submodule "cookbooks/chef-delegate"]
 	path = cookbooks/chef-delegate
 	url = https://github.com/peychart/chef-delegate.git
+[submodule "cookbooks/chef-iproute2"]
+	path = cookbooks/chef-iproute2
+	url = https://github.com/peychart/chef-iproute2.git
