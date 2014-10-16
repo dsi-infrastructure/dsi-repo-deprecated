@@ -50,3 +50,6 @@
 [submodule "data_bags"]
 	path = data_bags
 	url = https://gitlab.gov.pf/infrastructure/chef-data_bags.git
+[submodule "roles"]
+	path = roles
+	url = https://gitlab.gov.pf/infrastructure/chef-roles.git
