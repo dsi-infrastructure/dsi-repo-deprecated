@@ -47,3 +47,6 @@
 [submodule "cookbooks/chef-qmail"]
 	path = cookbooks/chef-qmail
 	url = https://github.com/stephaneLII/chef-qmail.git
+[submodule "data_bags"]
+	path = data_bags
+	url = https://gitlab.gov.pf/infrastructure/chef-data_bags.git
