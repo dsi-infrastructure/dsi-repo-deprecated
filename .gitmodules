@@ -56,3 +56,6 @@
 [submodule "cookbooks/chef-specific.gov.pf"]
 	path = cookbooks/chef-specific.gov.pf
 	url = https://github.com/peychart/chef-specific.gov.pf.git
+[submodule "cookbooks/chef-hostsfile"]
+	path = cookbooks/chef-hostsfile
+	url = https://github.com/peychart/chef-hostsfile.git
