@@ -53,3 +53,6 @@
 [submodule "roles"]
 	path = roles
 	url = https://gitlab.gov.pf/infrastructure/chef-roles.git
+[submodule "cookbooks/mataara"]
+	path = cookbooks/mataara
+	url = https://gitlab.gov.pf/infrastructure/chef-mataara.git
