@@ -56,3 +56,6 @@
 [submodule "cookbooks/mataara"]
 	path = cookbooks/mataara
 	url = https://gitlab.gov.pf/infrastructure/chef-mataara.git
+[submodule "cookbooks/samba"]
+	path = cookbooks/samba
+	url = https://github.com/sitle/chef-samba.git
