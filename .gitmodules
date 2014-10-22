@@ -59,3 +59,9 @@
 [submodule "cookbooks/chef-hostsfile"]
 	path = cookbooks/chef-hostsfile
 	url = https://github.com/peychart/chef-hostsfile.git
+[submodule "cookbooks/mataara"]
+	path = cookbooks/mataara
+	url = https://gitlab.gov.pf/infrastructure/chef-mataara.git
+[submodule "cookbooks/samba"]
+	path = cookbooks/samba
+	url = https://github.com/sitle/chef-samba.git
