@@ -2,7 +2,7 @@ bash -c '
 
 <%= "export http_proxy=\"#{knife_config[:bootstrap_proxy]}\"" if knife_config[:bootstrap_proxy] -%>
 
-PACKAGE_URL="http://repository.os.gov.pf/archives/ubuntu-14.04/chef_11.12.8-2_amd64.deb"
+PACKAGE_URL="http://repository.os.gov.pf/archives/chef-client/ubuntu14.04/chef_11.16.4-1_amd64.deb"
 
 if [ ! -f /usr/bin/chef-client ]; then
   wget $PACKAGE_URL -O /tmp/chef-client-package.deb
