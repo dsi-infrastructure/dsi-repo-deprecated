@@ -1,7 +1,5 @@
 .rake_test_cache
-roles/*.json
 environments/*.json
-data_bags/*
 syntax_check_cache/
 my_cookbooks/
 .vagrant
