@@ -36,7 +36,7 @@ action :create do
   t = template "/etc/cron.d/#{new_resource.name}" do
     cookbook new_resource.cookbook
     source 'cron.d.erb'
-    mode '0644'
+    mode new_resource.mode
     variables(
                 :name => new_resource.name,
                 :predefined_value => new_resource.predefined_value,
@@ -51,8 +51,9 @@ action :create do
                 :path => new_resource.path,
                 :home => new_resource.home,
                 :shell => new_resource.shell,
-                :comment => new_resource.comment
-    )
+                :comment => new_resource.comment,
+                :environment => new_resource.environment
+      )
     action :create
   end
   new_resource.updated_by_last_action(t.updated_by_last_action?)

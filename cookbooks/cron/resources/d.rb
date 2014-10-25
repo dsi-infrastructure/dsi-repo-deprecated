@@ -36,6 +36,8 @@ attribute :path, :kind_of => [String, NilClass]
 attribute :home, :kind_of => [String, NilClass]
 attribute :shell, :kind_of => [String, NilClass]
 attribute :comment, :kind_of => [String, NilClass]
+attribute :environment, :kind_of => Hash, :default => {}
+attribute :mode, :kind_of => [String, Integer], :default => '0644'
 
 def initialize(*args)
   super
@@ -53,7 +55,7 @@ def self.validate_predefined_value(spec)
 end
 
 def self.validate_numeric(spec, min, max)
-#  binding.pry
+  #  binding.pry
   if spec.is_a? Fixnum
     return false unless spec >= min && spec <= max
     return true
@@ -78,7 +80,7 @@ def self.validate_month(spec)
   elsif spec.class == String
     return true if spec == '*'
     # Named abbreviations are permitted but not as part of a range or with stepping
-    return true if %w(jan feb mar apry may jun jul aug sep oct nov dec).include? spec.downcase
+    return true if %w(jan feb mar apr may jun jul aug sep oct nov dec).include? spec.downcase
     # 1-12 are legal for months
     return validate_numeric(spec, 1, 12)
   else
