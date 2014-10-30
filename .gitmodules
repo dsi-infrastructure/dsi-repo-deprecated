@@ -4,9 +4,6 @@
 [submodule "cookbooks/openldap"]
 	path = cookbooks/openldap
 	url = https://github.com/sitle/openldap
-[submodule "cookbooks/chef-haclusters"]
-	path = cookbooks/chef-haclusters
-	url = https://github.com/peychart/chef-haclusters.git
 [submodule "cookbooks/chef-ldap-checkbackend"]
 	path = cookbooks/chef-ldap-checkbackend
 	url = https://github.com/peychart/chef-ldap-checkbackend.git
@@ -65,3 +62,6 @@
 [submodule "cookbooks/samba"]
 	path = cookbooks/samba
 	url = https://github.com/sitle/chef-samba.git
+[submodule "cookbooks/chef-haproxy-ng"]
+	path = cookbooks/chef-haproxy-ng
+	url = https://github.com/peychart/chef-haproxy-ng.git
