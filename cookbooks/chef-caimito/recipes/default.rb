@@ -14,7 +14,7 @@ end
 url = node['chef-caimito']['download_url']
 prefix = node['chef-caimito']['prefix']
 bash "wget" do
-#  code "cd /tmp && wget #{url} && cd #{prefix} && unzip -q -o -a /tmp/$(basename #{url}) && mkdir #{prefix}/caimato/logs"
+  code "cd /tmp && wget #{url} && cd #{prefix} && unzip -q -o -a /tmp/$(basename #{url}) && mkdir #{prefix}/caimato/logs"
 #  not_if do ::File.exists?("#{prefix}") end
 end
 puts "wget #{url} done..."
