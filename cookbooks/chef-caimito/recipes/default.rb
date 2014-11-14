@@ -95,5 +95,5 @@ template '/etc/init.d/caimito' do
 end
 
 service 'caimito' do
-  action [ :enable, :restart ]
+  action [ :enable ]
 end
