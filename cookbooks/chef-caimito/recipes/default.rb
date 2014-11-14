@@ -39,7 +39,7 @@ template "#{prefix}/caimito/bin/setenv.sh" do
   })
 end
 
-template "#{prefix}/caimito/source/ngasi/caimito/CaimitoConfig.java" do
+template "#{prefix}/caimito/source/ngasi/caimito/resource/FileResourceObj.java" do
   source 'FileResourceObj.java.erb'
   mode 0644
   variables({

@@ -5,7 +5,7 @@
 default['chef-caimito']['download_url'] = 'http://caimito-download.ngasi.com/caimito/caimito_64b.zip'
 default['chef-caimito']['prefix'] = '/usr/local/bin'
 
-default['chef-caimito']['derbyDatabase']['username'] = 'caimato'
+default['chef-caimito']['derbyDatabase']['username'] = 'caimito'
 default['chef-caimito']['derbyDatabase']['password'] = 'tiger'
 default['chef-caimito']['mysqlDatabase']['username'] = 'dbuser'
 default['chef-caimito']['mysqlDatabase']['password'] = 'tiger'
