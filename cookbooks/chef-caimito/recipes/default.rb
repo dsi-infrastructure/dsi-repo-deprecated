@@ -62,6 +62,16 @@ i=1; while i do
   end
 end if node['chef-caimito']['resource']['type'].eql? 'file'
 
+template "#{prefix}/caimito/webapps/WEB-INF/caimito/config.properties" do
+  source 'config.properties.erb'
+  mode 0644
+  variables({
+    :prefix => node['chef-caimito']['prefix'],
+    :type => node['chef-caimito']['resource']['type'],
+    :storage => node['chef-caimito']['resource'][ node['chef-caimito']['resource']['type'] ]
+  })
+end
+
 template "#{prefix}/caimito/webapps/WEB-INF/jamun/server.json" do
   source 'server.json.erb'
   mode 0644
