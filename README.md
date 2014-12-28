@@ -1,4 +1,8 @@
-## DSI-REPO
+## DSI-REPO DEPRECATED
+
+Merci d'utiliser dorénavant le projet ci-dessous :
+
+https://github.com/dsi-infrastructure/dsi-repo-ng
 
 DSI-REPO permet d'interagir avec le serveur chef.
 
